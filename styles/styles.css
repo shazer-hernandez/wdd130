@@ -51,6 +51,6 @@ footer {
 }
 
 /* Added this part so the word "Mexico" would be in white and make good contrast. */
-aside h1 {
+aside h2 {
   color: #fff
 }
