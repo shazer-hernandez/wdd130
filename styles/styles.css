@@ -45,7 +45,6 @@ aside {
   width: 20rem;
   padding: 1rem;
   text-align: center;
-  position: relative;
 }
 
 aside img {
@@ -75,4 +74,12 @@ aside h2 {
   padding: 1rem;
   background-color: #ddd;
   color: #000;
+}
+
+aside {
+  position: relative;
+}
+
+aside h2 {
+  position: absolute;
 }
