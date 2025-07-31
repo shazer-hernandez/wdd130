@@ -45,6 +45,7 @@ aside {
   width: 20rem;
   padding: 1rem;
   text-align: center;
+  position: relative;
 }
 
 aside img {
@@ -61,6 +62,7 @@ footer {
 /* Added this part so the word "Mexico" would be in white and make good contrast. */
 aside h2 {
   color: var(--main-text-color)
+  
 }
 
 
