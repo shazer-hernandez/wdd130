@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --main-color: darkblue;
   --main-text-color: white;
@@ -24,6 +30,7 @@ main img {
   border: 1px solid black;
   padding: 2px;
   box-shadow: 0 0 30px gray;
+  float: right;
 }
 
 p {
@@ -36,11 +43,7 @@ main {
 
 aside {
   width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2);
   padding: 1rem;
-  background-color: #340042;
-  color: var(--main-text-color);
   text-align: center;
 }
 
@@ -58,4 +61,16 @@ footer {
 /* Added this part so the word "Mexico" would be in white and make good contrast. */
 aside h2 {
   color: var(--main-text-color)
+}
+
+
+
+
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
 }
