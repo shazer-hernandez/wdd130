@@ -1,3 +1,179 @@
+:root {
+  --primary-color: #FFF3B0;
+  --secondary-color: #96d483;
+  --accent1-color: #240f61;
+  --accent2-color: #9E2A2B;
+  --heading-font: "Roboto", sans-serif;
+  --body-font: "Anton", sans-serif;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: #fff;
+}
+
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+}
+
+nav,
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 3px solid var(--accent1-color);
+}
+
+header img {
+  width: 90px;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+header nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--accent1-color);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--accent1-color);
+  border-radius: 6px;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header nav a:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-color: var(--secondary-color);
+}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.8;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 1rem;
+}
+
+/* ===== HISTORY ===== */
+.history {
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.history h2 {
+  text-align: center;
+  color: var(--accent1-color);
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1rem;
+  align-items: center;
+  text-align: justify;
+}
+
+.history-content img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+/* ===== ADVENTURE ===== */
+.adventure {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.adventure h2 {
+  color: var(--accent1-color);
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* ===== CONTACT PAGE STYLES ===== */
+
+/* Contact info section */
 .contact-info,
 .team {
   text-align: center;
@@ -9,6 +185,7 @@
   font-weight: bold;
 }
 
+/* Map + Form grid layout */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -17,20 +194,15 @@
   align-items: start;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+/* Map styling */
+.map-container iframe {
   width: 100%;
-  padding: 0.5rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  font-family: var(--body-font);
+  height: 300px;
+  border-radius: 8px;
+  border: 2px solid var(--accent1-color);
 }
 
-textarea {
-  resize: vertical;
-}
-
+/* Contact form box */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -41,6 +213,24 @@ textarea {
   border: 1px solid #ccc;
 }
 
+/* Inputs and textarea shared styling */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+}
+
+/* Textarea specific */
+textarea {
+  resize: vertical;
+}
+
+/* Submit button */
 button[type="submit"] {
   background-color: var(--accent1-color);
   color: #fff;
@@ -55,18 +245,13 @@ button[type="submit"]:hover {
   background-color: var(--accent2-color);
 }
 
+/* Radio & checkbox spacing */
 input[type="radio"],
 input[type="checkbox"] {
   margin-right: 0.5rem;
 }
 
-.map-container iframe {
-  width: 100%;
-  height: 300px;
-  border-radius: 8px;
-  border: 2px solid var(--accent1-color);
-}
-
+/* ===== EMPLOYEE PROFILES ===== */
 .employee-profiles {
   display: flex;
   justify-content: space-around;
@@ -90,4 +275,3 @@ input[type="checkbox"] {
   margin-top: 0.5rem;
   font-family: var(--heading-font);
 }
-
