@@ -279,8 +279,9 @@ input[type="checkbox"] {
 
 
 
+/* ===== HOME PAGE ===== */
 
-
+/* Hero section: usa un fondo, texto centrado */
 .hero {
   background: url('../images/rafting-hero.jpg') center/cover no-repeat;
   height: 400px;
@@ -342,7 +343,7 @@ input[type="checkbox"] {
   background-color: var(--accent2-color);
 }
 
-
+/* Call to Action (CTA) */
 .cta {
   text-align: center;
   margin-bottom: 3rem;
@@ -367,7 +368,7 @@ input[type="checkbox"] {
   color: white;
 }
 
-
+/* ===== TRIPS PAGE ===== */
 
 .trips-grid {
   display: grid;
@@ -432,6 +433,9 @@ input[type="checkbox"] {
   background-color: var(--accent2-color);
 }
 
+/* ===== Utility ===== */
+
+/* Screen reader only helper */
 .sr-only {
   position: absolute;
   width: 1px;
