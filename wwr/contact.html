@@ -2,101 +2,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us / Rafting Company</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - White Water Rafting</title>
     <meta name="description"
-        content="Contact Rafting Company. Reach out to us with questions, reservations, or feedback.">
-    <meta name="author" content="Kevin Hernandez" />
-
-    <link rel="stylesheet" href="styles/contact.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet" />
+        content="Get in touch with White Water Rafting. Contact us for reservations, general inquiries, or website suggestions.">
+    <link rel="stylesheet" href="rafting.css">
 </head>
 
 <body>
+    <!-- Header / Navigation (same as other pages) -->
     <header>
-        <img src="images/wwr-logo.png" alt="Rafting Company Logo" />
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
 
     <main>
-        <section class="contact-info">
-            <h1>White Water Rafting Company</h1>
-            <p>123 Main River Street<br>Kolob, California</p>
-            <p>+1 999 999 9999</p>
-            <p><a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
-        </section>
-
-        <section class="contact-grid">
+        <!-- Company Info -->
+        <section class="company-info">
+            <h1>Contact White Water Rafting</h1>
+            <p>Reach out to us via the form below, email, phone, or visit us at our location:</p>
+            <ul>
+                <li><strong>Address:</strong> River Street, Mexico City, Mexico</li>
+                <li><strong>Phone:</strong> +1 555 123 4567</li>
+                <li><strong>Email:</strong> info@wwr.com</li>
+            </ul>
             <div class="map-container">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835734824055!2d-122.41941548468128!3d37.77492927975992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c2c9535bb%3A0x5c5f09b0f8f69ccf!2sKolob%2C%20CA!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
-                    width="100%" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.0000000000005!2d-99.00000000000001!3d19.00000000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a00000000001%3A0x123456789abcdef0!2sRiver+Street%2C+Mexico+City%2C+Mexico!5e0!3m2!1sen!2sus!4v1234567890"
+                    width="600" height="450" allowfullscreen loading="lazy">
                 </iframe>
             </div>
-
-            <form class="contact-form" action="#" method="post">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required />
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="you@example.com" required />
-
-                <p>Message Purpose</p>
-                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br />
-                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br />
-                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Type here..." required></textarea>
-
-                <label>
-                    <input type="checkbox" name="subscribe" />
-                    Please subscribe me to the monthly newsletter
-                </label>
-
-                <button type="submit">Get in Touch!</button>
-            </form>
         </section>
 
-        <section class="team">
-            <h2>We Are Here to Serve You</h2>
-            <div class="employee-profiles">
-                <figure>
-                    <img src="images/..." alt="Sarah - Rafting Guide" />
-                    <figcaption>Sarah - Rafting Guide</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/..." alt="Jake - Safety Expert" />
-                    <figcaption>Jake - Safety Expert</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/..." alt="Maria - Reservations Manager" />
-                    <figcaption>Maria - Reservations Manager</figcaption>
-                </figure>
+        <!-- Employee Profiles -->
+        <section class="employees">
+            <h2>Our Team</h2>
+            <div class="employee">
+                <img src="images/employee1.jpg" alt="Jane Doe - CEO">
+                <p><strong>Jane Doe</strong> - CEO</p>
             </div>
+            <div class="employee">
+                <img src="images/employee2.jpg" alt="John Smith - Lead Guide">
+                <p><strong>John Smith</strong> - Lead Guide</p>
+            </div>
+            <div class="employee">
+                <img src="images/employee3.jpg" alt="Mary Johnson - Reservations Manager">
+                <p><strong>Mary Johnson</strong> - Reservations Manager</p>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="process_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <p>Purpose of Message:</p>
+                <label>
+                    <input type="radio" name="purpose" value="General Inquiry" required> General Inquiry
+                </label>
+                <label>
+                    <input type="radio" name="purpose" value="Reservation Question"> Reservation Question
+                </label>
+                <label>
+                    <input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion
+                </label>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </section>
     </main>
 
+    <!-- Footer (same as other pages) -->
     <footer>
-        <p>© 2025 Rafting Company, Kevin Hernandez</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook" /></a>
-            <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter" /></a>
-            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram" /></a>
-        </nav>
+        <p>&copy; 2025 White Water Rafting. All rights reserved.</p>
+        <div class="socialmedia">
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+        </div>
     </footer>
 </body>
 
