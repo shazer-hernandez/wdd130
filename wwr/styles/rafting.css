@@ -283,7 +283,7 @@ input[type="checkbox"] {
 
 /* Hero section: usa un fondo, texto centrado */
 .hero {
-  background: url('../images/rafting-hero.jpg') center/cover no-repeat;
+  background: url('images/hero-image.webp') center/cover no-repeat;
   height: 400px;
   display: flex;
   align-items: center;
