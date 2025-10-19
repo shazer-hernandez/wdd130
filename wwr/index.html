@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Rafting Company</title>
+    <meta name="description"
+        content="Rafting Company - exciting river trips, expert guides, and unforgettable experiences. Join our newsletter and book your adventure.">
+    <meta name="author" content="Kevin Hernandez">
+
+    <link rel="stylesheet" href="styles/rafting.css">
+
+    <!-- Same Google fonts used site-wide -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/wwr-logo.png" alt="Rafting Company Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero: uses CSS Grid in rafting.css -->
+        <section class="hero hero-grid" aria-label="Main hero">
+            <div class="hero-image">
+                <img src="images/hero-image.jpg" alt="Rafting on white water">
+            </div>
+            <div class="hero-content">
+                <h1>Experience the River — Adventure Awaits</h1>
+                <p class="lead">Join our expert guides for a safe, thrilling rafting trip. Suitable tours for families,
+                    beginners and experienced paddlers.</p>
+
+                <blockquote class="quote">
+                    “Life is a journey, not a destination. As we travel along life's pathway, we encounter challenges,
+                    obstacles, and uncertainties... We must finish strong.”
+                    <span class="cite">— President Thomas S. Monson, "Finishers Wanted", Ensign, June 2001</span>
+                </blockquote>
+
+                <div class="hero-actions">
+                    <a href="trips.html" class="btn primary">See Trips</a>
+                    <a href="contact.html" class="btn outline">Contact & Book</a>
+                </div>
+
+                <!-- Newsletter -->
+                <form class="newsletter" action="process_newsletter.php" method="POST"
+                    aria-label="Subscribe to newsletter">
+                    <label for="newsletter-email" class="visually-hidden">Email for newsletter</label>
+                    <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn small">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Feature grid -->
+        <section class="features">
+            <div class="feature">
+                <h3>Safe & Certified Guides</h3>
+                <p>All guides are trained, certified, and experienced in river safety and first aid.</p>
+            </div>
+            <div class="feature">
+                <h3>Family Friendly</h3>
+                <p>Trips for all ages — choose from gentle floats to full-day adventures.</p>
+            </div>
+            <div class="feature">
+                <h3>Gear Provided</h3>
+                <p>PFDs, helmets, and paddles included. Just bring your sense of adventure.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Rafting Company, Kevin Hernandez</p>
+        <nav class="socialmedia" aria-label="Social media">
+            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
