@@ -4,27 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - White Water Rafting</title>
+    <title>Contact Us / Rafting Company</title>
+
+    <!-- Ruta correcta del CSS -->
+    <link rel="stylesheet" href="styles/rafting.css">
+
     <meta name="description"
         content="Get in touch with White Water Rafting. Contact us for reservations, general inquiries, or website suggestions.">
-    <link rel="stylesheet" href="styles/rafting.css">
+    <meta name="author" content="Kevin Hernandez">
+
+    <!-- Fuentes igual que en about.html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header / Navigation (same as other pages) -->
+    <!-- Header idéntico -->
     <header>
+        <img src="images/wwr-logo.png" alt="Rafting Company Logo">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html" class="active">Contact</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Company Info -->
+        <!-- Sección principal tipo "hero" -->
+        <div class="hero">
+            <img src="images/hero-image.jpg" alt="Rafting background">
+            <h1>Contact Rafting Company</h1>
+            <article>
+                <img src="images/happy-client.jpg" alt="Happy Client">
+                <p>We’d love to hear from you! Reach out for reservations, general questions, or feedback about our
+                    adventures.</p>
+            </article>
+        </div>
+
+        <!-- Información de contacto -->
         <section class="company-info">
-            <h1>Contact White Water Rafting</h1>
-            <p>Reach out to us via the form below, email, phone, or visit us at our location:</p>
+            <h2>Our Information</h2>
             <ul>
                 <li><strong>Address:</strong> River Street, Mexico City, Mexico</li>
                 <li><strong>Phone:</strong> +1 555 123 4567</li>
@@ -38,24 +63,26 @@
             </div>
         </section>
 
-        <!-- Employee Profiles -->
+        <!-- Equipo -->
         <section class="employees">
-            <h2>Our Team</h2>
-            <div class="employee">
-                <img src="images/employee1.jpg" alt="Jane Doe - CEO">
-                <p><strong>Jane Doe</strong> - CEO</p>
-            </div>
-            <div class="employee">
-                <img src="images/employee2.jpg" alt="John Smith - Lead Guide">
-                <p><strong>John Smith</strong> - Lead Guide</p>
-            </div>
-            <div class="employee">
-                <img src="images/employee3.jpg" alt="Mary Johnson - Reservations Manager">
-                <p><strong>Mary Johnson</strong> - Reservations Manager</p>
+            <h2>Meet Our Team</h2>
+            <div class="gallery">
+                <figure class="employee">
+                    <img src="images/employee1.jpg" alt="Jane Doe - CEO">
+                    <figcaption><strong>Jane Doe</strong> - CEO</figcaption>
+                </figure>
+                <figure class="employee">
+                    <img src="images/employee2.jpg" alt="John Smith - Lead Guide">
+                    <figcaption><strong>John Smith</strong> - Lead Guide</figcaption>
+                </figure>
+                <figure class="employee">
+                    <img src="images/employee3.jpg" alt="Mary Johnson - Reservations Manager">
+                    <figcaption><strong>Mary Johnson</strong> - Reservations Manager</figcaption>
+                </figure>
             </div>
         </section>
 
-        <!-- Contact Form -->
+        <!-- Formulario -->
         <section class="contact-form">
             <h2>Send Us a Message</h2>
             <form action="process_form.php" method="POST">
@@ -88,14 +115,20 @@
         </section>
     </main>
 
-    <!-- Footer (same as other pages) -->
+    <!-- Footer igual que en About Us -->
     <footer>
-        <p>&copy; 2025 White Water Rafting. All rights reserved.</p>
-        <div class="socialmedia">
-            <a href="#">Facebook</a> |
-            <a href="#">Instagram</a> |
-            <a href="#">Twitter</a>
-        </div>
+        <p>© 2025 Rafting Company, Kevin Hernandez</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </nav>
     </footer>
 </body>
 
